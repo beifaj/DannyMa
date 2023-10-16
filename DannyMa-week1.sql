@@ -72,9 +72,6 @@ ON m.customer_id=s.customer_id AND m.join_date > s.order_date
 ORDER BY diff
 LIMIT 3;
 
-
- 
-
 		
  
 -- 8. What is the total items and amount spent for each member before they became a member?
