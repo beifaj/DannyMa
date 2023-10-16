@@ -258,10 +258,10 @@ SET toppings = REPLACE(
                         REPLACE(
                             REPLACE(
                                 REPLACE(
-									REPLACE(
-										REPLACE(
-											REPLACE(toppings,'12', 'Tomato Sauce'),
-											'11', 'Tomatoes'),
+					REPLACE(
+						REPLACE(
+							REPLACE(toppings,'12', 'Tomato Sauce'),
+						'11', 'Tomatoes'),
                                         '10', 'Salami'),
                                     '9', 'Peppers'),
                                 '8', 'Pepperoni'),
@@ -345,10 +345,10 @@ WITH t1 AS
 		CASE 
 			WHEN exclusions LIKE '4' AND extras LIKE '1, 5' 
 					THEN REPLACE
-							(REPLACE(
-								REPLACE(new_toppings, 'Bacon', 'Bacon x2'),
-							'Cheese', ''),
-						'Chicken', 'Chicken x2')  ELSE new_toppings
+						(REPLACE(
+							REPLACE(new_toppings, 'Bacon', 'Bacon x2'),
+						'Cheese', ''),
+					'Chicken', 'Chicken x2')  ELSE new_toppings
 			END AS new_toppings
 FROM(
 	SELECT order_id,
